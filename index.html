@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<!-- //Estructura básica y título de la pagina web// -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCRIPTADOR DE TEXTO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- <body> //Contenedor para cifrar y descifrar// -->
+<div class="container">
+    <header>
+        <P>PROYECTO ENCRIPTADOR DE TEXTO</P>
+        <img src="img/Logo.png" alt="Logo Alura">
+    </header>
+<div class="encriptar">
+    <textarea
+name="texto"
+class="texto"
+id="texto"
+cols="30"
+rows="10"
+placeholder="Escribe el texto a encriptar"></textarea>
+</textarea>
+<!-- //Mensaje de validación// -->
+<div class="terminos"> <p>El sistema solo acepta letras minúsculas y no se deben incluir ascentos en el texto.</p></div>
+</div>
+<!-- //Creación de botones y presentación del texto// -->
+<div class="botones">
+    <button class="btn-encriptar" type="button" onclick="encriptar()">ENCRIPTAR</button>
+    <input type="button" class="btn-desencriptar" value="DESENCRIPTAR" onclick="desencriptar()">
+</div>
+<div class="encriptado">
+<img src="img/muñeco.jpg" alt="muñeco" id="muñeco"/>
+<div class="mensaje-encriptado" id="mensaje-encriptado">
+    <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+    <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p> 
+    <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
+</div>
+</div>
+</div>
+<footer> <!-- Informacion del programa-->
+    <p>Alura Latam/ Oracle 2024</p> 
+</footer>
+</body>
+<script src="index.js"></script> 
+</html>
